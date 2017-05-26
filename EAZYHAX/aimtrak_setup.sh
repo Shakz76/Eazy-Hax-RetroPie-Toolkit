@@ -28,7 +28,7 @@ sed -i 's/device_raw_mousetype\[2\] pnp/device_raw_mousetype[2] ps2/g' /home/pi/
 sed -i 's/device_raw_mousetype\[3\] pnp/device_raw_mousetype[3] ps2/g' /home/pi/.advance/advmame-1.4.rc
 echo ""
 echo ""
-echo "Downloading and installing cheats. I will then enable cheats for Advance-Mame if they are needed."
+echo "Checking for the cheats.dat file. I will install and enable cheats for Advance-Mame if they are needed."
 sleep 5
 if [ ! -f "/home/pi/.advance/cheat.dat" ]; then
 	echo ""
@@ -43,12 +43,14 @@ echo ""
 echo ""
 echo "Downloading gun configureation application. This will appear in your RetroPie menu after install. You will need to calibrate the gun prior to gameplay."
 sleep 8
+cd
 git clone https://github.com/gunpadawan/gunconf.git
 cd gunconf
 sudo cp utils/aimtrak.rules /etc/udev/rules.d/99-aimtrak.rules
 sudo udevadm control --reload-rules
 sudo python setup.py install
 cp ./utils/gunconf.sh ~/RetroPie/retropiemenu/
+sudo rm -r ./gunconf
 echo ""
 echo ""
 echo "Checking to see if you have any shooters. If not snagging a few to get you started"
