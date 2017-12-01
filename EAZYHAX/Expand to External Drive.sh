@@ -45,7 +45,7 @@ sleep 10; exit
 else echo "External drive checks out. Correctly formatted to NTFS"
 fi
 
-sudo grep UUID /etc/fstab > /dev/null 2>&1
+sudo grep -w UUID /etc/fstab > /dev/null 2>&1
 if [ $? -eq 0 ] ; then
 echo "It seems you already have an external drive mapped. Only one  external drive is supported. Please run the "Remove Drive Expansion" script from the Retropie menu before adding a new drive."
 sleep 10
