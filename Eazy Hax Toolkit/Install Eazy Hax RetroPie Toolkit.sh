@@ -7,7 +7,7 @@ fi
 
 cd /home/pi/RetroPie/retropiemenu
 svn checkout https://github.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/trunk/Eazy%20Hax%20Toolkit
-cd ~/RetroPie/retropiemenu/Eazy\ Hax\ Toolkit/
+cd /home/pi/RetroPie/retropiemenu/Eazy\ Hax\ Toolkit/
 REV=`svn info | grep "Revision" | awk '{print $2}'`
 DATE=`svn info | grep "Last Changed Date" |awk '{print $4}'`
 TIME=`svn info | grep "Last Changed Date" |awk '{print $5}'`
