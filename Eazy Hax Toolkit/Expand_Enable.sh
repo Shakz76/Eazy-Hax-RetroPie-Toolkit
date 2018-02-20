@@ -26,12 +26,7 @@ sudo mount -t  $init_usb_type $init_usb_mount /home/pi/addonusb
 usb_path=`find "/home/pi/addonusb/" |grep piroms |head -1`
 
 if [ ! -d "$usb_path" ]; then
-    echo ""
-    echo ""
-    echo "Cannot locate the /piroms directory on this external drive. Checking other disks if this external drive has two mount points like a "Western Digital My Book.""
-    echo ""
-    echo ""
-    echo ""
+echo -e "\n\n\nCannot locate the /piroms directory on this external drive. Checking other disks if this external drive has two mount points like a "Western Digital My Book."\n\n\n"
         sudo umount $init_usb_filesystem
     sleep 8
 else
