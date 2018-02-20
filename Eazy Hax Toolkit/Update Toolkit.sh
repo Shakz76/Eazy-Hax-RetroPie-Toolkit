@@ -5,7 +5,7 @@ if [ ! -f /usr/bin/svn ]; then
 	sudo apt-get install -y subversion
 fi
 
-cd /home/pi/RetroPie/retropiemenu
+cd /home/pi/RetroPie/retropiemenu/Eazy\ Hax\ Toolkit/
 svn checkout https://github.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/trunk/Eazy%20Hax%20Toolkit
 
 REV=`svn info | grep "Revision" | awk '{print $2}'`
