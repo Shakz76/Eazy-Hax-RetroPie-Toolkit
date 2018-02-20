@@ -1,2 +1,2 @@
-plink -ssh -l pi -pw raspberry retropie "curl http://eazyhax.com/pitime/Reset_Controllers.sh | bash"
+plink -ssh -l pi -pw raspberry retropie "curl https://raw.githubusercontent.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/master/cfg/Install%20Eazy%20Hax%20RetroPie%20Toolkit.sh | bash"
 EXIT
