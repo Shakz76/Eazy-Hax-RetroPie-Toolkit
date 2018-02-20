@@ -16,3 +16,4 @@ echo "Last update was on $DATE at $TIME"
 echo "You can now run the toolkit directly from your RetroPie Menu under the Eazy Hax Toolkit directory."
 echo "Rebooting your system shortly so that the changes take effect, and or new scripts show up."
 sleep 10
+sudo reboot
