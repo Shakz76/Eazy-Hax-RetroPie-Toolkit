@@ -68,11 +68,11 @@ find "/home/pi/RetroPie/roms" -mindepth 1 -maxdepth 1 -type d -printf "$usb_path
 sleep 1
 mv /home/pi/RetroPie/roms /home/pi/RetroPie/localroms
 cd /etc/samba/
-sudo cp /home/pi/RetroPie/retropiemenu/smb.conf.exp .
+sudo curl -o https://raw.githubusercontent.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/master/cfg/smb.conf.exp
 sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bkup
 sudo cp /etc/samba/smb.conf.exp /etc/samba/smb.conf
 cd /etc/profile.d
-sudo cp /home/pi/RetroPie/retropiemenu/10-retropie.sh.exp .
+sudo curl -o https://raw.githubusercontent.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/master/cfg/10-retropie.sh.exp
 sudo mv /etc/profile.d/10-retropie.sh /etc/profile.d/10-retropie.sh.org
 sudo cp /etc/profile.d/10-retropie.sh.exp /etc/profile.d/10-retropie.sh
 sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bkup
