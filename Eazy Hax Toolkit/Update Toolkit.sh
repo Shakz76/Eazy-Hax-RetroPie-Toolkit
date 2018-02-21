@@ -15,5 +15,6 @@ TIME=`svn info | grep "Last Changed Date" |awk '{print $5}'`
 echo "You have been upgraded to the latest version $REV"
 echo "Last update was on $DATE at $TIME"
 echo "Rebooting your system shortly so that the changes take effect, and or new scripts show up."
+echo "testing release"
 sleep 10
 sudo reboot
