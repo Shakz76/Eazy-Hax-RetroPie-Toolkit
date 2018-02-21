@@ -57,7 +57,7 @@ exit
 else
 
 echo "UUID=$usb_uuid  $HOME/addonusb      $usb_filesystem    nofail,user,umask=0000  0       2" > $HOME/.currentdrive
-sudo sh -c 'cat $HOME/.currentdrive >> /etc/fstab'
+sudo sh -c "cat $HOME/.currentdrive >> /etc/fstab"
 sudo umount $usb_mount
 sudo mount -a
 mkdir $usb_path/roms/
