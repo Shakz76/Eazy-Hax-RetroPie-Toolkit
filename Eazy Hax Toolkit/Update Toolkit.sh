@@ -6,8 +6,7 @@ if [ ! -f /usr/bin/svn ]; then
 fi
 
 cd ~/RetroPie/retropiemenu/Eazy\ Hax\ Toolkit/
-rm -r ~/RetroPie/retropiemenu/Eazy\ Hax\ Toolkit/*
-svn update
+svn up --accept tf
 
 REV=`svn info | grep "Revision" | awk '{print $2}'`
 DATE=`svn info | grep "Last Changed Date" |awk '{print $4}'`
