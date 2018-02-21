@@ -15,4 +15,4 @@ echo "You have been upgraded to the latest version $REV"
 echo "Last update was on $DATE at $TIME"
 echo "Rebooting your system shortly so that the changes take effect, and or new scripts show up."
 sleep 10
-echo "test Version"
+echo "test Version1"
