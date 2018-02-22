@@ -66,13 +66,12 @@ sleep 1
 mv $HOME/RetroPie/roms $HOME/RetroPie/localroms
 cd /etc/samba/
 sudo curl -o ./smb.conf.exp https://raw.githubusercontent.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/master/cfg/smb.conf.exp
-sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bkup
-sudo cp /etc/samba/smb.conf.exp /etc/samba/smb.conf
+sudo mv /etc/samba/smb.conf /etc/samba/smb.conf.bkup
+sudo ln -s /etc/samba/smb.conf.exp smb.conf
 cd /etc/profile.d
 sudo curl -o ./10-retropie.sh.exp https://raw.githubusercontent.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/master/cfg/10-retropie.sh.exp
 sudo mv /etc/profile.d/10-retropie.sh /etc/profile.d/10-retropie.sh.org
-sudo cp /etc/profile.d/10-retropie.sh.exp /etc/profile.d/10-retropie.sh
-sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bkup
+sudo ln -s /etc/profile.d/10-retropie.sh.exp 10-retropie.sh
 echo "The drive has been expanded and your system will now halt. Detach your external drive...plug it up to your computer. Load the games then plug it back in and restart your Retro Arena rig...you should see your additional games."
 echo 'You also have the option of uploading games through windows via //odroid in windows file explorere (your Retro Arena rig has to be connected to your home network). Have fun!!!'
 echo "-Forrest aka Eazy Hax on youtube!"
