@@ -10,7 +10,7 @@ if [ ! -d "/home/pi/addonusb/piroms/roms" ] && [ -d "/home/pi/RetroPie/localroms
         rm /home/pi/RetroPie/recovery
         unlink /home/pi/RetroPie/roms; cd /home/pi/RetroPie/; ln -s /home/pi/RetroPie/combined_drives roms
         sudo mount -t overlay overlay -olowerdir=/home/pi/addonusb/piroms/roms,upperdir=/home/pi/RetroPie/localroms,workdir=/home/pi/.work /home/pi/RetroPie/combined_drives
-        cd /etc/samba/ && unlink smb.conf && ln -s /etc/samba/smb.conf.exp smb.conf
+        cd /etc/samba/ && sudo unlink smb.conf && sudo ln -s /etc/samba/smb.conf.exp smb.conf
         sudo /usr/sbin/service smbd restart
         elif [ -d "/home/pi/addonusb/piroms/roms" ] && [ -d "/home/pi/RetroPie/combined_drives" ] && [ -d "/home/pi/RetroPie/localroms" ] ; then
         sleep 1
