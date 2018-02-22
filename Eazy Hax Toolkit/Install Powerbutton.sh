@@ -8,6 +8,6 @@ if [ $? -eq 0 ] ; then
 	exit
 else
 	sudo sed -i '/fi/a \ sudo python /home/pi/.powerpi.py --silent & \' /etc/rc.local
-	cd /home/pi/ && wget http://eazyhax.com/pitime/.powerpi.py
+	cd /home/pi/ && wget https://raw.githubusercontent.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/master/cfg/.powerpi.py
 	sudo reboot
 fi
