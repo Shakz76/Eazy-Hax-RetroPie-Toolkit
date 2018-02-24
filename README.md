@@ -1,12 +1,30 @@
-## Welcome to GitHub Pages
+# The Eazy Hax RetroPie Toolkit
+I have spent an insane amount of time developing and maintaining this kit over the past two years for you guys and its been a blast! Due to changes that the team at RetroPie and Raspberry Pi have made to the OS the scripts require regular maintenance to function reliably....so update your scripts often or make sure you subscribe to my channel and enable notifications so you don't miss out! 
+ 
 
-You can use the [editor on GitHub](https://github.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Install the toolkit to run through the RetroPie Menu on the pi itself
+### Enable SSH (Required for Windows or Mac users)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+First your RetroPie must be connected to the internet through your home network so you can
+A. Connect to your Pi 
+B. Download the toolkit and config file
 
-### Markdown
+Now on with enabling ssh.....
 
+1. Go to the RetroPie Menu and select Raspi-config
 ![Screenshot](/images/ssh1.JPG)
+2. Navigate to Interface Options
+![Screenshot](/images/ssh2.JPG)
+3. Select SSH
+![Screenshot](/images/ssh3.JPG)
+4. Select Yes
+![Screenshot](/images/ssh4.PNG)
+
+### Install the Kit (Windows)
+
+
+
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
