@@ -32,38 +32,23 @@ Download the Windows Kit [HERE](http://eazyhax.com/pitime/retropie_toolkit_v2/Re
 1. Next Click "Run anyway"  
 ![Screenshot](/images/windows4.PNG)
 1. A screen will pop up with text showing you the status of the install and informing you that your pi will be rebooted so the scripts show up.   
-![Screenshot](/images/windows5.PNG)
-
-
-
-
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![Screenshot](/images/windows5.PNG)  
+Thats it! When your pi comes back online you should see a new menu item Eazy Hax Toolkit under the RetroPie Menu.  
+![Screenshot](/images/eazyhaxtoolkit.png)  
+  
+  
+### Install the Kit (Mac)
+1. Press Super (apple button) and spacebar to bring up spotlight. Type in "terminal"
+![Screenshot](/images/mac1.png)  
+1. Highlight, copy and paste the below line into the terminal (Super + c to copy; Super + v to paste)
+```ssh retropie -l pi```  
+![Screenshot](/images/mac2.png)  
+Just type yes and hit enter if you get the dialog above.  
+1. Next put in the password `raspberry` when prompted and hit enter
+![Screenshot](/images/mac3.png)  
+1. To start the install highlight, copy and paste the below line into the terminal (Super + c to copy; Super + v to paste)  
+![Screenshot](/images/mac4.png)  
+1. You will then see text showing you the status of the install and informing you that your pi will be rebooted so the scripts show up.  
+![Screenshot](/images/mac5.png)    
+Thats it! When your pi comes back online you should see a new menu item Eazy Hax Toolkit under the RetroPie Menu.  
+![Screenshot](/images/eazyhaxtoolkit.png)  
