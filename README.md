@@ -22,6 +22,8 @@ Now on with enabling ssh.....
 
 ### Install the Kit (Windows)
 
+Download the Windows Kit [HERE](http://eazyhax.com/pitime/retropie_toolkit_v2/RetroPie%20Toolkit.zip)
+
 
 
 
