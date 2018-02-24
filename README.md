@@ -23,6 +23,16 @@ Now on with enabling ssh.....
 ### Install the Kit (Windows)
 
 Download the Windows Kit [HERE](http://eazyhax.com/pitime/retropie_toolkit_v2/RetroPie%20Toolkit.zip)
+1. Extract the toolkit and put the "RetroPie Toolkit" directory where ever you like
+![Screenshot](/images/windows1.PNG)
+1. Launch the "Install Eazy Hax Toolit on the Pi.cmd".
+![Screenshot](/images/windows2.PNG)
+1. If this is your first time launching one of the scripts in the toolkit then windows will give you a warning. (Dont worry...I wrote all these myself and they are harmless) Click "More Info"  
+![Screenshot](/images/windows3.PNG)
+1. Next Click "Run anyway"  
+![Screenshot](/images/windows4.PNG)
+1. A screen will pop up with text showing you the status of the install and informing you that your pi will be rebooted so the scripts show up.   
+![Screenshot](/images/windows5.PNG)
 
 
 
