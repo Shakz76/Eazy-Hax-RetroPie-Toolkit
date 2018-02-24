@@ -48,11 +48,19 @@ mkdir $HOME/addonusb/roms/
 echo "Syncing the roms on your internal drive to the external drive. They will be located in the "roms" directory on your external drive"
 sleep 3
 sudo chmod 777  $HOME/addonusb
-cp -vr  $HOME/RetroPie/roms/ $HOME/addonusb/
-echo -e "\n\n\nFinshed moving your files to the external drive. Linking your odroid to the external drive\n\n\n"
+find "$HOME/RetroPie/roms" -mindepth 1 -maxdepth 1 -type d -printf "$usb_path/roms/%f\n" | xargs mkdir -p 2>/dev/null || true
+sleep 1
 mv $HOME/RetroPie/roms $HOME/RetroPie/localroms
-cd $HOME/RetroPie
-ln -s $HOME/addonusb/roms roms
-echo "Roms directory linked to your external drive. Rebooting"
-sleep 5
-sudo reboot
+cd /etc/samba/
+sudo curl -o smb.conf.exp https://raw.githubusercontent.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/master/cfg/smb.conf.exp
+sudo mv smb.conf smb.conf.bkup
+sudo ln -s smb.conf.exp smb.conf
+cd /etc/profile.d
+sudo curl -o 10-retropie.sh.exp https://raw.githubusercontent.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/master/cfg/10-retropie.sh.exp
+sudo mv /etc/profile.d/10-retropie.sh /etc/profile.d/10-retropie.sh.org
+sudo ln -s 10-retropie.sh.exp 10-retropie.sh
+echo "The drive has been expanded and your system will now halt. Detach your external drive...plug it up to your computer. Load the games then plug it back in and restart your Retro Arena rig...you should see your additional games."
+echo 'You also have the option of uploading games through windows via //odroid in windows file explorere (your Retro Arena rig has to be connected to your home network). Have fun!!!'
+echo "-Forrest aka Eazy Hax on youtube!"
+sleep 10
+sudo halt
