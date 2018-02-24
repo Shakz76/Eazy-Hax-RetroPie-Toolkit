@@ -36,7 +36,7 @@ sudo sh -c "cat $HOME/.currentdrive >> /etc/fstab"
 sudo umount $usb_mount
 sudo mount -a
 fi
-testdrive2=`df |grep pigaming|wc -l`
+testdrive2=`df |grep addonusb|wc -l`
 if [ $testdrive2 -eq 0 ] ; then
 	echo -e "Something went wrong. Unable to detect that external drive mounted correctly. Exiting...."
 	sleep 5
@@ -44,15 +44,15 @@ if [ $testdrive2 -eq 0 ] ; then
 fi
 
 
-mkdir /home/pigaming/addonusb/roms/
+mkdir $HOME/addonusb/roms/
 echo "Syncing the roms on your internal drive to the external drive. They will be located in the "roms" directory on your external drive"
 sleep 3
 sudo chmod 777  $HOME/addonusb
-cp -vr  /home/pigaming/RetroPie/roms/ /home/pigaming/addonusb/
+cp -vr  $HOME/RetroPie/roms/ $HOME/addonusb/
 echo -e "\n\n\nFinshed moving your files to the external drive. Linking your odroid to the external drive\n\n\n"
 mv $HOME/RetroPie/roms $HOME/RetroPie/localroms
-cd /home/pigaming/RetroPie
-ln -s /home/pigaming/addonusb/roms roms
+cd $HOME/RetroPie
+ln -s $HOME/addonusb/roms roms
 echo "Roms directory linked to your external drive. Rebooting"
 sleep 5
 sudo reboot
