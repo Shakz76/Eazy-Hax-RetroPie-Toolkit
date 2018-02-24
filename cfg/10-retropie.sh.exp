@@ -1,21 +1,21 @@
 # launch our autostart apps (if we are on the correct tty)
 sleep 5
-if [ ! -d "$HOME/addonusb/roms" ] && [ -d "$HOME/RetroPie/localroms" ] ; then
+if [ ! -d "/home/pi/addonusb/roms" ] && [ -d "/home/pi/RetroPie/localroms" ] ; then
         echo "Drive is not there rolling back expansion."
         sleep 1
         cd /etc/samba/ && sudo unlink smb.conf && sudo ln -s /etc/samba/smb.conf.bkup smb.conf
         sudo /usr/sbin/service smbd restart
-        touch $HOME/RetroPie/recovery; cd $HOME/RetroPie/; unlink roms; ln -s $HOME/RetroPie/localroms roms
-    elif [ -d "$HOME/addonusb/roms" ] && [ -f "$HOME/RetroPie/recovery" ] ; then
-        rm $HOME/RetroPie/recovery
-        unlink $HOME/RetroPie/roms; cd $HOME/RetroPie/; ln -s $HOME/RetroPie/combined_drives roms
-        sudo mount -t overlay overlay -olowerdir=$HOME/addonusb/roms,upperdir=$HOME/RetroPie/localroms,workdir=$HOME/.work $HOME/RetroPie/combined_drives
+        touch /home/pi/RetroPie/recovery; cd /home/pi/RetroPie/; unlink roms; ln -s /home/pi/RetroPie/localroms roms
+    elif [ -d "/home/pi/addonusb/roms" ] && [ -f "/home/pi/RetroPie/recovery" ] ; then
+        rm /home/pi/RetroPie/recovery
+        unlink /home/pi/RetroPie/roms; cd /home/pi/RetroPie/; ln -s /home/pi/RetroPie/combined_drives roms
+        sudo mount -t overlay overlay -olowerdir=/home/pi/addonusb/roms,upperdir=/home/pi/RetroPie/localroms,workdir=/home/pi/.work /home/pi/RetroPie/combined_drives
         cd /etc/samba/ && sudo unlink smb.conf && sudo ln -s /etc/samba/smb.conf.exp smb.conf
         sudo /usr/sbin/service smbd restart
-    elif [ -d "$HOME/addonusb/roms" ] && [ -d "$HOME/RetroPie/combined_drives" ] && [ -d "$HOME/RetroPie/localroms" ] ; then
+    elif [ -d "/home/pi/addonusb/roms" ] && [ -d "/home/pi/RetroPie/combined_drives" ] && [ -d "/home/pi/RetroPie/localroms" ] ; then
         sleep 1
-        unlink $HOME/RetroPie/roms; cd $HOME/RetroPie/; ln -s $HOME/RetroPie/combined_drives roms
-        sudo mount -t overlay overlay -olowerdir=$HOME/addonusb/roms,upperdir=$HOME/RetroPie/localroms,workdir=$HOME/.work $HOME/RetroPie/combined_drives
+        unlink /home/pi/RetroPie/roms; cd /home/pi/RetroPie/; ln -s /home/pi/RetroPie/combined_drives roms
+        sudo mount -t overlay overlay -olowerdir=/home/pi/addonusb/roms,upperdir=/home/pi/RetroPie/localroms,workdir=/home/pi/.work /home/pi/RetroPie/combined_drives
 fi
 
 if [ "`tty`" = "/dev/tty1" ]; then
