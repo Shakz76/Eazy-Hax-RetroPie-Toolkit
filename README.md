@@ -58,3 +58,9 @@ Just type yes and hit enter if you get the dialog above.
 ![Screenshot](/images/mac5.png)    
 Thats it! When your pi comes back online you should see a new menu item Eazy Hax Toolkit under the RetroPie Menu.  
 ![Screenshot](/images/eazyhaxtoolkit.png)  
+
+# The Scripts and what they do...
+1. Add Video Sphlashscreens - A simple script to install a set of my favorite video splashscreens.  
+[![](http://img.youtube.com/vi/4uWfP_HJuLY/0.jpg)](https://www.youtube.com/watch?v=4uWfP_HJuLY)  
+2. Disk Space - Simply tells you how much space you have available on your SD card and **IF** you have used my "Expand to External Drive" scripts...how much space is on your external drive as well.  
+![Screenshot](/images/diskspace.png)  
