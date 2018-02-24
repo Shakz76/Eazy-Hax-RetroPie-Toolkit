@@ -40,13 +40,14 @@ Thats it! When your pi comes back online you should see a new menu item Eazy Hax
 ### Install the Kit (Mac)
 1. Press Super (apple button) and spacebar to bring up spotlight. Type in "terminal"
 ![Screenshot](/images/mac1.png)  
-1. Highlight, copy and paste the below line into the terminal (Super + c to copy; Super + v to paste)
+1. Highlight, copy and paste the below line into the terminal (Super + c to copy; Super + v to paste)  
 ```ssh retropie -l pi```  
 ![Screenshot](/images/mac2.png)  
 Just type yes and hit enter if you get the dialog above.  
 1. Next put in the password `raspberry` when prompted and hit enter
 ![Screenshot](/images/mac3.png)  
 1. To start the install highlight, copy and paste the below line into the terminal (Super + c to copy; Super + v to paste)  
+```curl https://raw.githubusercontent.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/master/cfg/Install%20Eazy%20Hax%20RetroPie%20Toolkit.sh | bash```
 ![Screenshot](/images/mac4.png)  
 1. You will then see text showing you the status of the install and informing you that your pi will be rebooted so the scripts show up.  
 ![Screenshot](/images/mac5.png)    
