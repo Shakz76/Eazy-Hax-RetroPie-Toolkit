@@ -45,6 +45,8 @@ fi
 
 
 mkdir $HOME/addonusb/roms/
+mkdir $HOME/RetroPie/combined_drives
+mkdir $HOME/.work
 echo "Syncing the roms on your internal drive to the external drive. They will be located in the "roms" directory on your external drive"
 sleep 3
 sudo chmod 777  $HOME/addonusb
