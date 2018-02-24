@@ -1,6 +1,11 @@
 # The Eazy Hax RetroPie Toolkit
 I have spent an insane amount of time developing and maintaining this kit over the past two years for you guys and its been a blast! Due to changes that the team at RetroPie and Raspberry Pi have made to the OS the scripts require regular maintenance to function reliably....so update your scripts often or make sure you subscribe to my channel and enable notifications so you don't miss out! 
- 
+
+# Install Instructions
+1. [Enable SSH (Required for Windows or Mac users)](#enable-ssh-required-for-windows-or-mac-users)
+2. [Install the Kit (Windows)](#install-the-kit-windows)
+3. [Install the Kit (Mac)](#install-the-kit-mac)
+
 
 ## Install the toolkit to run through the RetroPie Menu on the pi itself
 ### Enable SSH (Required for Windows or Mac users)
