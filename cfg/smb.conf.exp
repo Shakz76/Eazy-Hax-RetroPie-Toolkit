@@ -276,7 +276,7 @@ directory mask = 0755
 force user = pi
 [roms_external_drive]
 comment = roms
-path = "/home/pi/addonusb/piroms/roms"
+path = "/home/pi/addonusb/roms"
 writeable = yes
 guest ok = yes
 create mask = 0644
