@@ -6,6 +6,13 @@ I have spent an insane amount of time developing and maintaining this kit over t
 1. [Add Video Splash Screens](#add-video-sphlashscreens)  
 1. [Disk Space](#disk-space)  
 1. [Expand to External Drive Enable/Disable](#expand-to-external-hard-drive-enabledisable)  
+1. [Factory Reset Controllers](#factory-reset-controllers)
+1. [Flip Sega Genesis Megadrive and PCE TG16 graphics](#flip-sega-genesis-megadrive-and-pce-tg16-graphics)
+1. [Install PowerButton](#install-powerbutton)
+1. [No Audio Fix Scripts](#no-audio-scripts)
+1. [OverScan Enable/Disable](#overscan-enabledisable)
+1. [XIN Mo 2 Player Enable](#xin-mo-2-player-enable)
+1. [N64 Tweaks - Enable HD Graphics](#n64-tweaks) 
 
 ## Install Instructions
 1. [Enable SSH (Required for Windows or Mac users)](#enable-ssh-required-for-windows-or-mac-users)
@@ -112,7 +119,7 @@ If the words are running off of your screen and it seems some of the picture is 
 The XIN Mo controller is an excellent, easy to setup and CHEAP alternative for folks building a bartop arcade or arcade joystick controller for their RetroPie 
 http://amzn.to/2ovpqbV
 The only problem is the Pi registers the controller (one device) as only Player One...with no option to map the Player Two controls. After running my script the pi will then see 2 controllers represented and allow you to map them accordingly.  
-### N64 Tweaks
+### N64 Tweaks - Enable HD Graphics and Textures
 This script makes tweaks to the N64 emulator on the RetroPie (duh)
 It enables HD resolution and downloads the HD texture pack for Mario 64. You can download more texture packs and install them here on your retropie
 ```/home/pi/.local/share/mupen64plus/hires_texture```  
