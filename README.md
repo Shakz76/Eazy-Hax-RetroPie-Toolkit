@@ -12,7 +12,8 @@ I have spent an insane amount of time developing and maintaining this kit over t
 1. [No Audio Fix Scripts](#no-audio-scripts)
 1. [OverScan Enable/Disable](#overscan-enabledisable)
 1. [XIN Mo 2 Player Enable](#xin-mo-2-player-enable)
-1. [N64 Tweaks - Enable HD Graphics](#n64-tweaks) 
+1. [N64 Tweaks Enable HD Graphics](#n64-tweaks---enable-hd-graphics-and-textures) 
+
 
 ## Install Instructions
 1. [Enable SSH (Required for Windows or Mac users)](#enable-ssh-required-for-windows-or-mac-users)
