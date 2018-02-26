@@ -92,13 +92,6 @@ I tried to make this functionality as convenient for you as possible and this is
 [Disk Space](#disk-space)
 [Expand to External Drive Enable/Disable](#expand-to-external-hard-drive-enabledisable)
 
-
-
-# Install Instructions
-1. [Enable SSH (Required for Windows or Mac users)](#enable-ssh-required-for-windows-or-mac-users)
-2. [Install the Kit (Windows)](#install-the-kit-windows)
-3. [Install the Kit (Mac)](#install-the-kit-mac)
-
 ### Factory Reset Controllers
 Just what it says....it resets your controller config for EmulationStation (Gui control...switching between systems) **AND** Retroarch (your controller mapping ingame). 
 RetroPie has a similar script but they only wipe your EmulationStation configs and not your RetroArch mappings.  
