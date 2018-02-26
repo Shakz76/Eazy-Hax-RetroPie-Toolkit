@@ -60,11 +60,13 @@ Thats it! When your pi comes back online you should see a new menu item Eazy Hax
 ![Screenshot](/images/eazyhaxtoolkit.png)  
 
 # The Scripts and what they do...
-1. Add Video Sphlashscreens - A simple script to install a set of my favorite video splashscreens.  
+### Add Video Sphlashscreens
+A simple script to install a set of my favorite video splashscreens.  
 [![](http://img.youtube.com/vi/4uWfP_HJuLY/0.jpg)](https://www.youtube.com/watch?v=4uWfP_HJuLY)  
-2. Disk Space - Simply tells you how much space you have available on your SD card and **IF** you have used my "Expand to External Drive" scripts...how much space is on your external drive as well.  
+### Disk Space
+Simply tells you how much space you have available on your SD card and **IF** you have used my "Expand to External Drive" scripts...how much space is on your external drive as well.  
 ![Screenshot](/images/diskspace.png)  
-3. Expand to External Hard Drive Enable/Disable - 
+### Expand to External Hard Drive Enable/Disable
 I tried to make this functionality as convenient for you as possible and this is probably the most complex script in my arsenal.  
 **The Eazy Hax expand script IS NOT** the same thing that RetroPie already does. The RetroPie scripts are well made as is everything RetroPie does. The built in RetroPie scripts simply copy your /home/pi/RetroPie directory to your external drive and create a link to it. You have to wait for the games to copy over (takes ages on USB 2.0) and if you disconnect your USB drive you loose all of your games. If you want to use the RetroPie method...please do so.  
 **What The Eazy Hax Expand Script does:**
