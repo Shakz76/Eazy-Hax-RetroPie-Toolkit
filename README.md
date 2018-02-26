@@ -84,6 +84,6 @@ I tried to make this functionality as convenient for you as possible and this is
 * Because the Eazy Hax method does not actually copy anything...no need to wait for the roms to be copied to the external drive. The expansion is nearly instant...plus it does not waste that space.
 * The final benifit to this method is you can disconnect your External drive at any time, and plug it into your PC to load a large amount of roms saving you a ton of time. As many of you already know it takes quite a bit of time to copy the bigger CD/DVD based games to your Pi via the network. 
 **NOTE:**If you for whatever reason have the exact same copy of a game on the SD card and the External drive it will read what is on the SD card and ignore what is on the External Drive.  
-**The only rules are**
+#### The only rules are:
 * The External drive must be formatted to NTFS
-* Only one external drive **at a time** is supported. That said you can have 2 external drives...one with lets say your PS1 library and one with your Dreamcast library. You only need to run the Expand to External Drive Disable script, plug in your alternate drive, and run the expand script.
+* Only one external drive **at a time** is supported. That said you can have 2 external drives...one with lets say your PS1 library and one with your Dreamcast library. You only need to run the Expand to External Drive Disable script, plug in your alternate drive, and run the expand script each time you switch drives.
