@@ -87,3 +87,31 @@ I tried to make this functionality as convenient for you as possible and this is
 #### The only rules are:
 * The External drive must be formatted to NTFS
 * Only one external drive **at a time** is supported. That said you can have 2 external drives...one with lets say your PS1 library and one with your Dreamcast library. You only need to run the Expand to External Drive Disable script, plug in your alternate drive, and run the expand script each time you switch drives.
+[# The Scripts and what they do....](#the-scripts-and-what-they-do)
+[Add Video Splash Screens](#add-video-sphlashscreens)
+[Disk Space](#disk-space)
+[Expand to External Drive Enable/Disable](#expand-to-external-hard-drive-enabledisable)
+
+
+
+# Install Instructions
+1. [Enable SSH (Required for Windows or Mac users)](#enable-ssh-required-for-windows-or-mac-users)
+2. [Install the Kit (Windows)](#install-the-kit-windows)
+3. [Install the Kit (Mac)](#install-the-kit-mac)
+
+### Factory Reset Controllers
+Just what it says....it resets your controller config for EmulationStation (Gui control...switching between systems) **AND** Retroarch (your controller mapping ingame). 
+RetroPie has a similar script but they only wipe your EmulationStation configs and not your RetroArch mappings.  
+### Flip Sega Genesis Megadrive and PCE TG16 graphics
+You guessed it. Flips the graphics from Megadrive to Genesis and PC Engine to TurboGrafx-16. If you run it again it will reverse itself and set the graphics back to Megadrive and PC Engine. 
+### Install PowerButton
+I tried to come up with a easy way to setup a cheap "power off/shutdown" button for your RetroPie.  
+I walk through exactly how to install the button in the video below. The script simply installs the needed python scripts for you so you only need to install the button, and run the script.
+[![PlaceHolder Video](http://img.youtube.com/vi/0Z23SA2Dx1U/0.jpg)](https://www.youtube.com/watch?v=0Z23SA2Dx1U)  
+### No Audio Scripts
+If you are not getting audio this is due to the type of TV you have. They are all a little different and these are setup to help fix it with the click of a button....the names are self-explanatory.
+### OverScan Enable/Disable
+If your screen has a black border all the way around it run OverScan Disable to get rid of it. 
+If the words are running off of your screen and it seems some of the picture is cut off then run OverScan Enable.  
+**Here is an example of needed to run OverScan Disable:**
+![Need To Run OverScan Disable Example](http://s1.dmcdn.net/JgNeA/1280x720-tni.jpg)
