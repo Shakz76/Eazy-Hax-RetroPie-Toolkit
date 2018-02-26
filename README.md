@@ -107,11 +107,21 @@ You guessed it. Flips the graphics from Megadrive to Genesis and PC Engine to Tu
 ### Install PowerButton
 I tried to come up with a easy way to setup a cheap "power off/shutdown" button for your RetroPie.  
 I walk through exactly how to install the button in the video below. The script simply installs the needed python scripts for you so you only need to install the button, and run the script.
-[![PlaceHolder Video](http://img.youtube.com/vi/0Z23SA2Dx1U/0.jpg)](https://www.youtube.com/watch?v=0Z23SA2Dx1U)  
+[![](http://img.youtube.com/vi/0Z23SA2Dx1U/0.jpg)](https://www.youtube.com/watch?v=0Z23SA2Dx1U)  
 ### No Audio Scripts
 If you are not getting audio this is due to the type of TV you have. They are all a little different and these are setup to help fix it with the click of a button....the names are self-explanatory.
 ### OverScan Enable/Disable
 If your screen has a black border all the way around it run OverScan Disable to get rid of it. 
 If the words are running off of your screen and it seems some of the picture is cut off then run OverScan Enable.  
 **Here is an example of needed to run OverScan Disable:**
-![Need To Run OverScan Disable Example](http://s1.dmcdn.net/JgNeA/1280x720-tni.jpg)
+![Need To Run OverScan Disable Example](http://s1.dmcdn.net/JgNeA/1280x720-tni.jpg)  
+### XIN Mo 2 Player Enable
+The XIN Mo controller is an excellent, easy to setup and CHEAP alternative for folks building a bartop arcade or arcade joystick controller for their RetroPie 
+http://amzn.to/2ovpqbV
+The only problem is the Pi registers the controller (one device) as only Player One...with no option to map the Player Two controls. After running my script the pi will then see 2 controllers represented and allow you to map them accordingly.  
+### N64 Tweaks
+This script makes tweaks to the N64 emulator on the RetroPie (duh)
+It enables HD resolution and downloads the HD texture pack for Mario 64. You can download more texture packs and install them here on your retropie
+```/home/pi/.local/share/mupen64plus/hires_texture```  
+I go through everything in detail on the video below. You MUST run an N64 game at least once and change the emulator to mupen64plus-rice. Please watch the vid for more details.  
+[![](http://img.youtube.com/vi/8fX2KWw8lH4/0.jpg)](https://www.youtube.com/watch?v=8fX2KWw8lH4)  
