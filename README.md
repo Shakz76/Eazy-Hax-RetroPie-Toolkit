@@ -1,12 +1,13 @@
 # The Eazy Hax RetroPie Toolkit
 I have spent an insane amount of time developing and maintaining this kit over the past two years for you guys and its been a blast! Due to changes that the team at RetroPie and Raspberry Pi have made to the OS the scripts require regular maintenance to function reliably....so update your scripts often or make sure you subscribe to my channel and enable notifications so you don't miss out! 
 
-# The Scripts and what they do....  
+[The Scripts and what they do....](#the-scripts-and-what-they-do)
+================================
 1. [Add Video Splash Screens](#add-video-sphlashscreens)  
 1. [Disk Space](#disk-space)  
 1. [Expand to External Drive Enable/Disable](#expand-to-external-hard-drive-enabledisable)  
 
-# Install Instructions
+## Install Instructions
 1. [Enable SSH (Required for Windows or Mac users)](#enable-ssh-required-for-windows-or-mac-users)
 2. [Install the Kit (Windows)](#install-the-kit-windows)
 3. [Install the Kit (Mac)](#install-the-kit-mac)
