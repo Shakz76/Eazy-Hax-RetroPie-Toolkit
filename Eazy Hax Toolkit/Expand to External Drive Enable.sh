@@ -14,7 +14,7 @@ fi
 EXTDR=`sudo blkid |grep -v mmc|grep ntfs`
 usb_mount=`echo $EXTDR|awk '{print $1 }'|tr -d :`
 usb_filesystem=`echo $EXTDR |grep -Po 'TYPE="\K.*?(?=")'`
-usb_uuid=`echo $EXTDR|grep $usb_mount|awk '{print $2 }' |grep -Po 'UUID="\K.*?(?=")'`
+usb_uuid=`echo $EXTDR|grep $usb_mount|awk '{print $3 }' |grep -Po 'UUID="\K.*?(?=")'`
 
 if [ "$usb_filesystem" != "ntfs" ] ; then
 echo "This external drive is not correctly formatted. It must be formatted using the NTFS filesystem. Please reformat it to NTFS."
