@@ -8,8 +8,7 @@ sleep 2
 rm /opt/retropie/configs/all/retroarch-joypads/*
 cd /home/pi/.emulationstation/
 rm es_input.cfg
-runuser -l pi -c 'cd /home/pi/.emulationstation/; cp /home/pi/RetroPie/retropiemenu/EAZYHAX/es_input.cfg.bkup es_input.cfg'
+cd /home/pi/.emulationstation/; curl -o es_input.cfg https://raw.githubusercontent.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/master/cfg/es_input.cfg.bkup
 
 sudo reboot
 exit
-
