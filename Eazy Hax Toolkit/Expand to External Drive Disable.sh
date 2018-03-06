@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ ! -d $HOME/RetroPie/localroms ]; then
+if [ ! -d $HOME/addonusb ]; then
     echo ""
     echo ""
     echo "I do not detect that this Retropie is expanded. Killing this script."
