@@ -50,7 +50,7 @@ mkdir $HOME/.work
 echo "Syncing the roms directories...not roms on your internal drive to the external drive. They will be located in the "roms" directory on your external drive"
 sleep 3
 sudo chmod 777  $HOME/addonusb
-find "$HOME/RetroPie/roms" -mindepth 1 -maxdepth 1 -type d -printf "$usb_path/roms/%f\n" | xargs mkdir -p 2>/dev/null || true
+find "$HOME/RetroPie/roms" -mindepth 1 -maxdepth 1 -type d -printf "$HOME/addonusb/roms/%f\n" | xargs mkdir -p 2>/dev/null || true
 sleep 1
 mv $HOME/RetroPie/roms $HOME/RetroPie/localroms
 cd /etc/samba/
