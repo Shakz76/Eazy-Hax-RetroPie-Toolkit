@@ -265,9 +265,8 @@ writable = yes
 forceuser = pi
 create mask = 0644
 directory mask = 0755
-
 [roms_sdcard]
-comment = roms
+comment = "Your SD Card Roms"
 path = "/home/pi/RetroPie/localroms"
 writeable = yes
 guest ok = yes
@@ -275,8 +274,16 @@ create mask = 0644
 directory mask = 0755
 force user = pi
 [roms_external_drive]
-comment = roms
+comment = "The roms on your External Drive"
 path = "/home/pi/addonusb/roms"
+writeable = yes
+guest ok = yes
+create mask = 0644
+directory mask = 0755
+force user = pi
+[roms]
+comment = "The combination of your SD and External Drive roms for scraping. NOTE: If you upload roms here they will go to your SD card!"
+path = "/home/pi/RetroPie/combined_drives"
 writeable = yes
 guest ok = yes
 create mask = 0644
