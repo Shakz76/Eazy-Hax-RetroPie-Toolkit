@@ -7,7 +7,7 @@ import random
 #CONFIG SECTION
 startdelay = 0 # Value (in seconds) to delay audio start.  If you have a splash screen with audio and the script is playing music over the top of it, increase this value to delay the script from starting.
 musicdir = '/home/pi/RetroPie/roms/music'
-maxvolume = 0.75
+maxvolume = 0.10
 volumefadespeed = 0.02
 restart = True # If true, this will cause the script to fade the music out and -stop- the song rather than pause it.
 startsong = "" # if this is not blank, this is the EXACT, CaSeSeNsAtIvE filename of the song you always want to play first on boot.
@@ -76,13 +76,12 @@ while True:
 				continue
 				
 	#Check to see if the DisableMusic file exists; if it does, stop doing everything!
-	if os.path.exists('/home/pi/PyScripts/DisableMusic'):
-		print "DisableMusic found!"
+	if os.path.exists('/home/pi/.DisableMusic'):
 		if mixer.music.get_busy():
 			mixer.music.stop();
-		while (os.path.exists('/home/pi/PyScripts/DisableMusic')):
-			time.sleep(15)
-		print "DisableMusic gone!"
+		while (os.path.exists('/home/pi/.DisableMusic')):
+			time.sleep(5)
+
 
 	if not mixer.music.get_busy(): # We aren't currently playing any music
 		while currentsong == lastsong and len(bgm) > 1:	#If we have more than one BGM, choose a new one until we get one that isn't what we just played.
@@ -92,7 +91,6 @@ while True:
 		lastsong=currentsong
 		mixer.music.set_volume(maxvolume) # Pygame sets this to 1.0 on new song; in case max volume -isnt- 1, set it to max volume.
 		mixer.music.play()
-		print "BGM Now Playing: " + song
 		
 	#Emulator check
 	pids = [pid for pid in os.listdir('/proc') if pid.isdigit()] 

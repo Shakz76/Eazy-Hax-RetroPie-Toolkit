@@ -1,20 +1,20 @@
 #!/usr/bin/env bash
 stop_bgm(){
-         pgrep -f "python /home/pi/.livewire.py"|tail -1|xargs sudo kill -STOP
+        touch /home/pi/.DisableMusic
     clear
         echo -e "\n\n\n                               Background Music Stopped\n\n\n"
         sleep 3
 }
 
 start_bgm(){
-        pgrep -f "python /home/pi/.livewire.py"|tail -1|xargs sudo kill -CONT
+        rm /home/pi/.DisableMusic
         echo -e "\n\n\n                                    Background Music Started\n\n\n"
         sleep 3
 }
 
-STATE=`pgrep -f "python /home/pi/.livewire.py"|tail -1|xargs ps -o state= -p`
-if [ $STATE = "S" ]; then
-    stop_bgm
-elif [ $STATE = "T" ]; then
-    start_bgm
+if [ -e /home/pi/.DisableMusic ]; then
+        start_bgm
+else
+        stop_bgm
 fi
+exit
