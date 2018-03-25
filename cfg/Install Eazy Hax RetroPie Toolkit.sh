@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ ! -f /usr/bin/svn ]; then
-	echo -e "/n/n/n     Subversion (the tool used to manage updates) is missing. Installing it now/n/n"
+	echo  "     Subversion (the tool used to manage updates) is missing. Installing it now"
 	sleep 5
 	sudo apt-get update; sudo apt-get install -y subversion
 fi
