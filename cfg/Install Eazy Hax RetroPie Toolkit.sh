@@ -2,7 +2,7 @@
 if [ ! -f /usr/bin/svn ]; then
 	echo "Subversion (the tool used to manage updates) is missing. Installing it now"
 	sleep 5
-	sudo apt-get install -y subversion
+	sudo apt-get update; sudo apt-get install -y subversion
 fi
 
 cd /home/pi/RetroPie/retropiemenu
