@@ -41,7 +41,7 @@ Now on with enabling ssh.....
 
 ### Install the Kit (Windows)
 
-Download the Windows Kit [HERE](https://github.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/blob/master/RetroPie%20Toolkit.zip)
+Download the Windows Kit [HERE](https://github.com/Shakz76/Eazy-Hax-RetroPie-Toolkit/raw/master/RetroPie%20Toolkit.zip)
 1. Extract the toolkit and put the "RetroPie Toolkit" directory where ever you like
 ![Screenshot](/images/windows1.PNG)
 1. Launch the "Install Eazy Hax Toolit on the Pi.cmd".
