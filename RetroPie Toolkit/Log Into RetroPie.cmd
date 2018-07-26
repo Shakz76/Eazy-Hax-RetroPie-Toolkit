@@ -1,2 +1,2 @@
-start .\putty.exe pi@retropie -pw raspberry
+start .\putty.exe pi@retropie.local -pw raspberry
 exit
