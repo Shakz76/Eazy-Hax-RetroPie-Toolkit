@@ -12,6 +12,7 @@ echo ""
 echo ""
 echo "Instlling the needed packages for the gun configureation application."
 sleep 3
+sudo apt-get update
 sudo apt-get -y install apt-transport-https python-dev python-pygame python-setuptools
 echo ""
 echo ""
