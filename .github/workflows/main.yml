@@ -12,6 +12,10 @@ jobs:
     
     steps:
     - uses: actions/checkout@1
+    
     - name: ShellChecking
       uses: leduues/action-shellcheck@0.1.0
+      
+    - name: Closes issues related to a merged pull request.
+      uses: ldez/gha-mjolnir@v1.0.0
   
