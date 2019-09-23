@@ -32,7 +32,7 @@ while not esStarted:
 	for pid in pids:
 		try:
 			procname = open(os.path.join('/proc',pid,'comm'),'rb').read()
-			if procname[:-1] == "emulationstatio": # Emulation Station's actual process name is apparently short 1 letter.
+			if procname[:-1] == "emulationstation": #Edited bi ZiMilio to correct actual name of ES' pid
 				esStarted=True
 		except IOError:	
 			continue
@@ -70,7 +70,7 @@ while True:
 		for pid in pids:
 			try:
 				procname = open(os.path.join('/proc',pid,'comm'),'rb').read()
-				if procname[:-1] == "emulationstatio": # Emulation Station's actual process name is apparently short 1 letter.
+				if procname[:-1] == "emulationstation":
 					esStarted=True # Will cause us to break out of the loop because ES is now running.
 			except IOError:	
 				continue
@@ -99,7 +99,7 @@ while True:
 	for pid in pids:
 		try:
 			procname = open(os.path.join('/proc',pid,'comm'),'rb').read()
-			if procname[:-1] == "emulationstatio": # Killing 2 birds with one stone, while we look for emulators, make sure EmulationStation is still running.
+			if procname[:-1] == "emulationstation": # Killing 2 birds with one stone, while we look for emulators, make sure EmulationStation is still running.
 					esStarted=True # And turn it back to True, because it wasn't done running.  This will prevent the loop above from stopping the music.
 			
 			if procname[:-1] in emulatornames: #If the process name is in our list of known emulators
