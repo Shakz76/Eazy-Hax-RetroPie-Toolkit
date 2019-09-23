@@ -1,21 +1,15 @@
-name: CI
+name: Shell Checking
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   test:
-    name: Test using ShellCheck
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@1
+    - uses: actions/checkout@v1
     
-    - name: ShellChecking
-      uses: leduues/action-shellcheck@0.1.0
-      
-    - name: Closes issues related to a merged pull request.
-      uses: ldez/gha-mjolnir@v1.0.0
+    - name: shellcheck
+      uses: ludeeus/action-shellcheck@0.1.0
   
